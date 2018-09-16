@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <%- include ../public/header.ejs%>
+</head>
+<body>
+<!-- 内容区 -->
+<div class="container dever_list">
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="title">司机列表</p>
+        </div>
+    </div>
+    <div class="row bag_color">
+        <div class="col-xs-12">
+            <div class="displ_fle">
+                <!-- Single button -->
+                <div class="fle">
+                    <span>关键字搜索</span>
+                    <div class="fle btn-group">
+                        <input type="text" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" placeholder="请输入关键字搜索">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fle">
+                    <span>从业年限</span>
+                    <div class="fle btn-group">
+                        <input type="text" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="请输入关键字搜索">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fle">
+                    <span>驾照要求</span>
+                    <div class="fle btn-group">
+                        <input type="text" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="请输入关键字搜索">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 search_list">
+            <div class="displ_fle">
+                <div class="fle">
+                    <span>期望待遇</span>
+                    <div class="fle btn-group">
+                        <input type="text" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="请输入关键字搜索">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fle">
+                    <span>学历要求</span>
+                    <div class="fle btn-group">
+                        <input type="text" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="请输入关键字搜索">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fle">
+                    <span>期望经验</span>
+                    <div class="fle btn-group">
+                        <input type="text" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="请输入关键字搜索">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <p> <button class="btn btn-primary">搜索</button> <button class="btn">清空搜索</button></p>
+        </div>
+    </div>
+    <div class="row border_info">
+        <div>
+
+        </div>
+        <div class="col-xs-12">
+            <table>
+                <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>求职意向</td>
+                    <td>年龄</td>
+                    <td>驾龄</td>
+                    <td>驾照</td>
+                    <td>期望薪资</td>
+                    <td>从业年限</td>
+                    <td>公司</td>
+                    <td>操作</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>钱先生 </td>
+                    <td>希望跳槽</td>
+                    <td>23岁</td>
+                    <td>10年</td>
+                    <td>B1</td>
+                    <td>1000元-6000元</td>
+                    <td>12年</td>
+                    <td>xxx物流公司</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">添加活动</button>
+                        <button class="btn btn-danger btn-sm">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>钱先生 </td>
+                    <td>希望跳槽</td>
+                    <td>23岁</td>
+                    <td>10年</td>
+                    <td>B1</td>
+                    <td>1000元-6000元</td>
+                    <td>12年</td>
+                    <td>xxx物流公司</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">添加活动</button>
+                        <button class="btn btn-danger btn-sm">删除</button>
+                        <button class="btn btn-danger btn-xs">信用</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>钱先生 </td>
+                    <td>希望跳槽</td>
+                    <td>23岁</td>
+                    <td>10年</td>
+                    <td>B1</td>
+                    <td>1000元-6000元</td>
+                    <td>12年</td>
+                    <td>xxx物流公司</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">添加活动</button>
+                        <button class="btn btn-danger btn-sm">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation">
+                <ul class="pagination pull-right">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<% include ../public/footer.ejs%>
+</body>
+</html>

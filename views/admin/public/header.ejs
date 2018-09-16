@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--The content below is only a placeholder and can be replaced.-->
+
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/css/administration.css">
+
+<!-- 导航部分  -->
+<nav>
+    <div class="public">
+        <!-- 导航 -->
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="/images/logo.png" alt="">
+
+                    </div>
+                    <div class="col-xs-8 pull-right">
+                        <ul class="ul_list">
+                            <li> <a href="/admin/driver_list">司机列表</a> <i></i> </li>
+                            <li> <a>客户列表</a> </li>
+                            <li> <a>招聘信息</a> </li>
+                            <li> <a>管理账户</a> </li>
+                            <li> <a>结算</a> </li>
+                            <!-- <li> <a to="/entrustment">信用评估</a> </li>   //归为功能                            -->
+                            <li><a to="#">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!--<nav class="navbar navbar-inverse" role="navigation">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header">-->
+
+            <!--<img src="/images/node.jpg" height="44px;" />-->
+
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="example-navbar-collapse">-->
+            <!--<ul class="nav navbar-nav">-->
+
+                <!--<li class="active"><a href="#">商品管理 </a>-->
+                <!--</li>-->
+                <!--<li class="active"><a href="#">文章管理</a>-->
+                <!--</li>-->
+                <!--<li class="active"><a href="#">系统设置</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a>欢迎您<%=userinfo.username%></a></li>-->
+                <!--<li><a href="/admin/loginOut">安全退出</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+</body>
+<script src="/js/jquery-3.3.1.js"></script>
+<script>
+    $(".ul_list li a").click(function(){
+        $(".ul_list li a").removeClass('xian_i')
+        $(this).addClass('xian_i')
+        console.log(123)
+    });
+</script>
+</html>
