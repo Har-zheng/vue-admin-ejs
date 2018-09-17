@@ -27,17 +27,24 @@ router.post('/doAdd',function (req,res) {
             //获取提交的数据以及图片上传成返回
             // console.log(fields); //获取表单的数据
             // console.log(files); // 图片上传成功 返回的信息
-            var title = fields.title[0];
+            var name_list = fields.name_list[0];
+            var intention = fields.intention[0];
+            var driving_age = fields.driving_age[0];
+            var year = fields.year[0];
+            var driving_license = fields.driving_license[0];
             var price = fields.price[0];
-            var fee = fields.fee[0];
-            var description = fields.description[0];
+            var entire_period = fields.entire_period[0];
+            var company = fields.company[0];
             var pic = files.pic[0].path;
-            // console.log(pic);
             DB.isnert('product',{
-                title:title,
-                price:price,
-                fee,
-                description,
+                name_list,
+                intention,
+                driving_age,
+                year,
+                driving_license,
+                price,
+                entire_period,
+                company,
                 pic
             },function (err,data) {
                 if (!err){
@@ -71,28 +78,41 @@ router.post('/doEdit',function(req,res){
 
         //console.log(fields);
         console.log(files);
-
-        var _id=fields._id[0];   /*修改的条件*/
-        var title=fields.title[0];
-        var price=fields.price[0];
-        var fee=fields.fee[0];
-        var description=fields.description[0];
-        var originalFilename=files.pic[0].originalFilename;
+        var _id = fields._id[0];
+        var name_list = fields.name_list[0];
+        var intention = fields.intention[0];
+        var driving_age = fields.driving_age[0];
+        var year = fields.year[0];
+        var driving_license = fields.driving_license[0];
+        var price = fields.price[0];
+        var entire_period = fields.entire_period[0];
+        var company = fields.company[0];
+        var pic = files.pic[0].path;
         var pic=files.pic[0].path;
+
+        var originalFilename=files.pic[0].originalFilename;
         if(originalFilename){  /*修改了图片*/
             var setData={
-                title,
+                name_list,
+                intention,
+                driving_age,
+                year,
+                driving_license,
                 price,
-                fee,
-                description,
+                entire_period,
+                company,
                 pic
             };
         }else{ /*没有修改图片*/
             var setData={
-                title,
+                name_list,
+                intention,
+                driving_age,
+                year,
+                driving_license,
                 price,
-                fee,
-                description
+                entire_period,
+                company
             };
             //删除生成的临时文件
             fs.unlink(pic,function (err,data) {
@@ -115,7 +135,7 @@ router.get('/delete',function (req,res) {
 
     DB.deleteOne('product',{"_id":new DB.ObjectID(id)},function (err,data) {
         if (!err){
-            res.redirect('/admin/product');
+            res.redirect('/admin/driver_list');
         }
     });
 })

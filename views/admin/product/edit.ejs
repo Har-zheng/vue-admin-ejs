@@ -6,31 +6,32 @@
         </div>
         <div class="col-sm-10">
             <ol class="breadcrumb">
-                <li class="active">商品管理
+                <li class="active">司机管理
                 </li>
-                <li class="active">商品列表
+                <li class="active">司机列表
                 </li>
             </ol>
             <div class="panel panel-default">
 
                 <div class="panel-heading">
-                    编辑商品
+                    编辑司机
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive input-form">
                         <form action="/admin/product/doEdit" method="post" enctype="multipart/form-data">
                             <ul>
-                                <li>_id:<input type="text" name="_id" style="width: 100%" value="<%=list._id%>"/></li>
-                                <li>  商品名称: <input type="text" name="title" value="<%=list.title%>"/></li>
-
-                                <li>  商品图片: <input type="file" name="pic"/>
-                                    <img src="<%=list.pic%>" width="200px" style="padding: 1em 0;">
-                                </li>
-                                <li>  商品价格: <input type="text" name="price" value="<%=list.price%>"/></li>
-                                <li>  商品邮费: <input type="text" name="fee" value="<%=list.fee%>"/></li>
-
+                                <li>_id:<input type="text" name="_id" style="width: 50%" value="<%=list._id%>"/></li>
+                                <li>  司机姓名: <input type="text" name="name_list" value="<%=list.name_list%>"/></li>
+                                <li>  求职意向：<input type="text" name="intention" value="<%=list.intention%>"/></li>
+                                <li>  驾龄: <input type="text" name="driving_age"value="<%=list.driving_age%>"/></li>
+                                <li>  年龄: <input type="text" name="year" value="<%=list.year%>"/></li>
+                                <li>  驾照: <input type="text" name="driving_license" value="<%=list.driving_license%>"/></li>
+                                <li>  期望薪资: <input type="text" name="price" value="<%=list.price%>"/></li>
+                                <li>  从业年限: <input type="text" name="entire_period" value="<%=list.entire_period%>"/></li>
+                                <li>  公司:    <input type="text" name="company" value="<%=list.company%>"/></li>
+                                <li>  头像:    <input type="file" name="pic" value="<%=list.company%>"/></li>
                                 <li>
-                                    商品描述:
+                                    描述:
                                     <textarea name="description" id="" cols="60" rows="8" ><%=list.description%></textarea>
                                 </li>
 

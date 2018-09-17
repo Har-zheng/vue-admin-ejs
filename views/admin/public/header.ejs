@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<!--The content below is only a placeholder and can be replaced.-->
 
 <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="/css/administration.css">
@@ -24,12 +16,12 @@
                     <div class="col-xs-8 pull-right">
                         <ul class="ul_list">
                             <li> <a href="/admin/driver_list">司机列表</a> <i></i> </li>
-                            <li> <a>客户列表</a> </li>
-                            <li> <a>招聘信息</a> </li>
-                            <li> <a>管理账户</a> </li>
-                            <li> <a>结算</a> </li>
+                            <li> <a href="/admin/customer_list">客户列表</a> </li>
+                            <li> <a href="/admin/recruitment">招聘信息</a> </li>
+                            <li> <a href="/admin/management">管理账户</a> </li>
+                            <li> <a href="/admin/settlement">结算</a> </li>
                             <!-- <li> <a to="/entrustment">信用评估</a> </li>   //归为功能                            -->
-                            <li><a to="#">退出登录</a></li>
+                            <li><a href="/admin/loginOut">退出登录</a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,13 +56,13 @@
         <!--</div>-->
     <!--</div>-->
 <!--</nav>-->
-</body>
+
 <script src="/js/jquery-3.3.1.js"></script>
 <script>
     $(".ul_list li a").click(function(){
         $(".ul_list li a").removeClass('xian_i')
         $(this).addClass('xian_i')
-        console.log(123)
+        $()
     });
+
 </script>
-</html>

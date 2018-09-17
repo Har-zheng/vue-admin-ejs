@@ -47,21 +47,20 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <%for(var i=0; i<list.length; i++){ %>
-                    <tr>
-                        <td><%=i+1%></td>
-                        <td><img width="300px" src="<%=list[i].pic%>"></td>
-                        <td><%=list[i].title%></td>
-                        <td><%=list[i].price%></td>
-                        <td><%=list[i].fee%></td>
+                        <%for(var i=0; i<list.length; i++){ %>
+                        <tr>
+                            <td><%=i+1%></td>
+                            <td><img width="300px" src="<%=list[i].pic%>"></td>
+                            <td><%=list[i].title%></td>
+                            <td><%=list[i].price%></td>
+                            <td><%=list[i].fee%></td>
 
-                        <td class="text-center">
-                            <!--<a href="/admin/product/add?id=<%=list[i]._id%>" style="color: #fff;"><button class="btn btn-primary btn-sm">修改 </button></a>-->
-                            <a href="/delete?id=<%=list[i]._id%>" style="color: #fff;"> <button class="btn btn-danger btn-sm">删除</button></a>
-                        </td>
-                    </tr>
-                    <% }%>
-
+                            <td class="text-center">
+                                <!--<a href="/admin/product/add?id=<%=list[i]._id%>" style="color: #fff;"><button class="btn btn-primary btn-sm">修改 </button></a>-->
+                                <a href="/delete?id=<%=list[i]._id%>" style="color: #fff;"> <button class="btn btn-danger btn-sm">删除</button></a>
+                            </td>
+                        </tr>
+                        <% }%>
                     </tbody>
                 </table>
             </div>

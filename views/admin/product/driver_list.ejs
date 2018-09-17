@@ -3,10 +3,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <%- include ../public/header.ejs%>
+    <title>司机列表</title>
+
 </head>
 <body>
+<%- include ../public/header.ejs%>
 <!-- 内容区 -->
 <div class="container dever_list">
     <div class="row">
@@ -126,49 +127,24 @@
                 </tr>
                 </thead>
                 <tbody>
+                <%for(var i=0; i<list.length; i++){%>
                 <tr>
-                    <td>钱先生 </td>
-                    <td>希望跳槽</td>
-                    <td>23岁</td>
-                    <td>10年</td>
-                    <td>B1</td>
-                    <td>1000元-6000元</td>
-                    <td>12年</td>
-                    <td>xxx物流公司</td>
+                    <td><%=list[i].name_list%> </td>
+                    <td><%=list[i].intention%></td>
+                    <td><%=list[i].year%></td>
+                    <td><%=list[i].driving_age%></td>
+                    <td><%=list[i].driving_license%></td>
+                    <td> <%=list[i].price%></td>
+                    <td><%=list[i].entire_period%></td>
+                    <td><%=list[i].company%></td>
                     <td>
                         <button class="btn btn-primary btn-sm">添加活动</button>
-                        <button class="btn btn-danger btn-sm">删除</button>
+                        <a href="/admin/product/delete?id=<%=list[i]._id%>">
+                            <button class="btn btn-danger btn-sm">删除</button>
+                        </a>
                     </td>
                 </tr>
-                <tr>
-                    <td>钱先生 </td>
-                    <td>希望跳槽</td>
-                    <td>23岁</td>
-                    <td>10年</td>
-                    <td>B1</td>
-                    <td>1000元-6000元</td>
-                    <td>12年</td>
-                    <td>xxx物流公司</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm">添加活动</button>
-                        <button class="btn btn-danger btn-sm">删除</button>
-                        <button class="btn btn-danger btn-xs">信用</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>钱先生 </td>
-                    <td>希望跳槽</td>
-                    <td>23岁</td>
-                    <td>10年</td>
-                    <td>B1</td>
-                    <td>1000元-6000元</td>
-                    <td>12年</td>
-                    <td>xxx物流公司</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm">添加活动</button>
-                        <button class="btn btn-danger btn-sm">删除</button>
-                    </td>
-                </tr>
+                <%}%>
                 </tbody>
             </table>
             <nav aria-label="Page navigation">

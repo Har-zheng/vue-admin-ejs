@@ -21,17 +21,20 @@
                     增加商品
                 </div>
                 <div class="panel-body">
-                    <div class="table-responsive input-form">
+
                         <form action="/admin/product/doAdd"  enctype="multipart/form-data"  method="post">
                             <ul>
-                                <li>  商品名称: <input type="text" name="title"/></li>
-
-                                <li>  商品图片: <input type="file" name="pic"/></li>
-                                <li>  商品价格: <input type="text" name="price"/></li>
-                                <li>  商品邮费: <input type="text" name="fee"/></li>
-
+                                <li>  司机姓名: <input type="text" name="name_list"/></li>
+                                <li>  求职意向：<input type="text" name="intention"/></li>
+                                <li>  驾龄: <input type="text" name="driving_age"/></li>
+                                <li>  年龄: <input type="text" name="year"/></li>
+                                <li>  驾照: <input type="text" name="driving_license"/></li>
+                                <li>  期望薪资: <input type="text" name="price"/></li>
+                                <li>  从业年限: <input type="text" name="entire_period"/></li>
+                                <li>  公司:    <input type="text" name="company"/></li>
+                                <li>  头像:    <input type="file" name="pic"/></li>
                                 <li>
-                                    商品描述:
+                                    公司:
                                     <textarea name="description" id="" cols="60" rows="8"></textarea>
                                 </li>
 

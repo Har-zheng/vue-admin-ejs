@@ -1,0 +1,36 @@
+.bottom{
+    margin-top: 2em;
+}
+.title{
+    margin-top: 1em;
+    padding: 12px;
+    background: #F3F3F3;
+}
+.search_box{
+    margin-top: 1em;
+}
+.div_const{
+    display: flex;
+}
+.div_list{
+    width: 25%;
+    height: 200px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+.div_one p{
+    margin-top: 3em !important;
+    color: #FF5400;
+    font-size: 18px;
+    text-align: center;
+}
+.div_two p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 2em !important;
+    color: #424242;
+}
+.div_fore p{
+    color: #424242;
+    text-align: center;
+}

@@ -17,8 +17,6 @@ var admin = require('./routes/admin');
 var index = require('./routes/index');
 
 
-
-
 // 使用ejs模板引擎 默认找views这个目录
 app.set('view engine', 'ejs');
 //配置 public 目录为我们的静态资源目录
@@ -27,6 +25,7 @@ app.use(express.static('public'));
 app.use('/upload',express.static('upload'));
 
 app.use('/',index);
+
 
 app.use('/admin',admin);
 app.listen(3000,'127.0.0.1');
