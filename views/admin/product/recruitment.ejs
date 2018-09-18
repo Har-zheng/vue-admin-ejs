@@ -4,32 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <title>招聘信息</title>
-    <link href="/css/recruitment.css">
+    <link rel="stylesheet" href="/css/recruitment.css">
 </head>
+<body>
 <%- include ../public/header.ejs%>
 <div class="container">
+    <div class="row  search_box">
+        <div class="col-xs-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="招聘名称" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">查询</span>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <button id="mymodal" class="btn btn-default">添加活动</button>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 ">
             <div class="div_info_th">
                 <i class="glyphicon glyphicon-star-empty"></i>
                 <span>顺丰专场</span>
-                <span class="pull-right">2018-6-8</span>
+                <span class="pull-right">
+                    创建时间
+                    <span>2018-6-8</span>
+                    招聘时间
+                    <span>2018-10-10</span>
+                </span>
             </div>
-            <div>
-                <span>工作地址： 北京</span>
-                <span>数量：3</span>
-                <span>驾照： B1以上</span>
-                <button class="btn btn-primary btn-sm pull-right">修改状态</button>
+            <div class="bd_dv">
+                <div class="ma_sp">
+                    <span>工作地址： 上海</span>
+                    <span>数量：3</span>
+                    <span>驾照： B1以上</span>
+                    <button class="btn btn-primary btn-sm pull-right">修改状态</button>
+                </div>
+                <div class="mg_p">
+                    <p>会场地址： 上海市嘉定区墨玉路006号</p>
+                    <p>招聘人数：16人</p>
+                    <p>从业年限： 三年以上</p>
+                    <p>负责人： 李某某</p>
+                    <p>联系电话： 18336048655</p>
+                </div>
             </div>
-            <div>
-                <p>会场地址： 上海市嘉定区墨玉路006号</p>
-                <p>招聘人数：16人</p>
-                <p>从业年限： 三年以上</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 ">
+            <div class="div_info_th">
+                <i class="glyphicon glyphicon-star-empty"></i>
+                <span>圆通招聘</span>
+                <span class="pull-right">
+                    创建时间
+                    <span>2018-6-8</span>
+                    招聘时间
+                    <span>2018-10-10</span>
+                </span>
+            </div>
+            <div class="bd_dv">
+                <div class="ma_sp">
+                    <span>工作地址： 上海</span>
+                    <span>数量：3</span>
+                    <span>驾照： B1以上</span>
+                    <button class="btn btn-primary btn-sm pull-right">修改状态</button>
+                </div>
+                <div class="mg_p">
+                    <p>会场地址： 上海市嘉定区墨玉路006号</p>
+                    <p>招聘人数：16人</p>
+                    <p>从业年限： 三年以上</p>
+                    <p>负责人： 李某某</p>
+                    <p>联系电话： 18336048655</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 ">
+            <div class="div_info_th">
+                <i class="glyphicon glyphicon-star-empty"></i>
+                <span>德邦招聘</span>
+                <span class="pull-right">
+                    创建时间
+                    <span>2018-6-8</span>
+                    招聘时间
+                    <span>2018-10-10</span>
+                </span>
+            </div>
+            <div class="bd_dv">
+                <div class="ma_sp">
+                    <span>工作地址： 上海</span>
+                    <span>数量：3</span>
+                    <span>驾照： B1以上</span>
+                    <button class="btn btn-primary btn-sm pull-right">修改状态</button>
+                </div>
+                <div class="mg_p">
+                    <p>会场地址： 上海市嘉定区墨玉路006号</p>
+                    <p>招聘人数：16人</p>
+                    <p>从业年限： 三年以上</p>
+                    <p>负责人： 李某某</p>
+                    <p>联系电话： 18336048655</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <%- include ../public/footer.ejs%>
-<body>
+<div  class="modal add_modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">添加招聘活动</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
+<script></script>
+<script src="/js/jquery-3.3.1.js"></script>
+<script src="/bootstrap/js/bootstrap.js"></script>
+<script>
+    $('#mymodal').on('click',function () {
+        $('.add_modal').modal({
+            keyboard: true,
+            show: true
+        })
+    });
+
+</script>
 </html>

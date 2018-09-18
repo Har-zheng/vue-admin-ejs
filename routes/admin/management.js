@@ -3,8 +3,6 @@ var router = express.Router();//可以使用express Rouetr类创建模块化 可
 
 router.get('/',function (req,res) {
 //pathname pathname baseUrl
-    res.render('admin/product/management',{
-        tisurl: req.baseUrl
-    });//这里读取的是ejs recruitment
+    res.render('admin/product/management',{});//这里读取的是ejs recruitment
 });
 module.exports = router;

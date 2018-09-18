@@ -4,10 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <title>管理账户</title>
+    <link rel="stylesheet" href="/css/management.css">
 </head>
 <body>
 <% include ../public/header.ejs%>
-<div>账户管理</div>
+<div class="container">
+    <div class="row  search_box">
+        <div class="col-xs-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索管理员" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">查询</span>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <button class="btn btn-default">添加管理员</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="contents">
+                <p>李四管理员</p>
+                <div class="contents_dv">
+                    <div >
+                        <p>账户：admin1</p>
+                        <p>密码：123456</p>
+                    </div>
+                    <div>
+                        <p>权限等级</p>
+                        <p>超级管理员</p>
+                    </div>
+                    <div>
+                        <p>操作</p>
+                        <p><button class="btn btn-primary btn-sm">添加</button><button class="btn btn-danger btn-sm">删除</button></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="contents">
+                <p>张三管理员</p>
+                <div class="contents_dv">
+                    <div >
+                        <p>账户：admin1</p>
+                        <p>密码：123456</p>
+                    </div>
+                    <div>
+                        <p>权限等级</p>
+                        <p>普通管理员</p>
+                    </div>
+                    <div>
+                        <p>操作</p>
+                        <p><button class="btn btn-primary btn-sm">添加</button><button class="btn btn-danger btn-sm">删除</button></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="contents">
+                <p>王五管理员</p>
+                <div class="contents_dv">
+                    <div >
+                        <p>账户：admin1</p>
+                        <p>密码：123456</p>
+                    </div>
+                    <div>
+                        <p>权限等级</p>
+                        <p>普通管理员</p>
+                    </div>
+                    <div>
+                        <p>操作</p>
+                        <p><button class="btn btn-primary btn-sm">添加</button><button class="btn btn-danger btn-sm">删除</button></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 <% include ../public/footer.ejs%>
 </body>
 </html>

@@ -4,10 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>结算</title>
+    <link rel="stylesheet" href="/css/settlement.css">
 </head>
 <body>
 <% include ../public/header.ejs%>
-<div>结算</div>
+<div class="container">
+    <div class="row  search_box">
+        <div class="col-xs-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索结算公司" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">查询</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="contents">
+                <p>顺丰上海嘉定分拨中心招聘会 <span class="pull-right">结束时间：2018-06-06</span></p>
+                <div class="contents_dv">
+                    <div >
+                        <p>目标招聘人数：16</p>
+                        <p>实际招聘人数：15</p>
+                    </div>
+                    <div>
+                        <p>结算方式</p>
+                        <p>网银</p>
+                    </div>
+                    <div>
+                        <p>操作</p>
+                        <p>
+                            <button class="btn btn-primary btn-sm">结算</button>
+                            <button class="btn btn-danger btn-sm">删除</button>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 <% include ../public/footer.ejs%>
 </body>
 </html>

@@ -1,0 +1,22 @@
+.contents{
+    margin-top: 1em;
+    background: #eff5f7;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgb(127, 140, 152);
+}
+.contents .contents_dv{
+    display: flex;
+}
+.contents .contents_dv div{
+    flex: 1;
+}
+.contents .contents_dv div p{
+    line-height: 2.6em;
+}
+.search_box{
+    margin-top: 1em;
+}
+.bottom{
+    margin-top: 2em;
+}
