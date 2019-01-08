@@ -18,7 +18,6 @@ router.get('/',function (req,res) {
 
 router.post('/doLogin',function (req,res) {
     // 获取登录提交的数据
-
         // res.send('login');
         // console.log(req.body); //获取提交的数据
         // req.body = { username: '123456', password: 'qqqqqqrrrrrrrrrr' }
@@ -32,7 +31,6 @@ router.post('/doLogin',function (req,res) {
             username:username,
             password:password
         },function (err,data) {
-            alert(JSON.stringify(err))
             if ( data.length >=1 ) {
                 console.log('登录成功');
                 // 保存用户信息
