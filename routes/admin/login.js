@@ -25,13 +25,16 @@ router.post('/doLogin',function (req,res) {
         //  1获取数据
         // 2  连接数据库
         console.log(req.body);
+        console.log(req);
         var username = req.body.username;
+
         var password = md5(req.body.password);/* 要对用户输入的密码加密*/
         DB.find('user',{
             username:username,
             password:password
         },function (err,data) {
             console.log(err);
+            alert(JSON.stringify(err));
             if ( data.length >=1 ) {
                 console.log('登录成功');
                 // 保存用户信息
@@ -39,9 +42,8 @@ router.post('/doLogin',function (req,res) {
                 res.redirect('/admin/product'); //登录成功跳转 列表页面
                 // console.log(req.session);
             }else {
-                alert(JSON.stringify(err));
                 // console.log("登录失败");
-                res.send("<script >alert('登录失败！'); location.href = '/admin/login'</script>")
+                res.send("<script >alert('登录失败！');location.href = '/admin/login'</script>")
             }
         });
 });
