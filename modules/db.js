@@ -3,7 +3,7 @@ var MongoClient=require('mongodb').MongoClient;
 
 var DbUrl = 'mongodb://localhost:27017/productmanage';
 
-var  ObjectID = require('mongodb'). ObjectId;
+var  ObjectID = require('mongodb').ObjectId;
 
 function __connectDb(callback) {
 
