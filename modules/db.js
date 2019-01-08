@@ -9,7 +9,6 @@ function __connectDb(callback) {
 
     MongoClient.connect(DbUrl,function (err,client) {
         if (err){
-            console.log(err)
             console.log('数据库连接失败')
             return;
         }
