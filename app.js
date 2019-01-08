@@ -25,7 +25,5 @@ app.use(express.static('public'));
 app.use('/upload',express.static('upload'));
 
 app.use('/',index);
-
-
 app.use('/admin',admin);
-app.listen(3000,'127.0.0.1');
+app.listen(3005,'127.0.0.1');
