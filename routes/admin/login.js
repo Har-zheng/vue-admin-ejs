@@ -32,7 +32,6 @@ router.post('/doLogin',function (req,res) {
             password:password
         },function (err,data) {
             console.log(err);
-            console.log(data)
             if ( data.length >=1 ) {
                 console.log('登录成功');
                 // 保存用户信息
@@ -41,8 +40,8 @@ router.post('/doLogin',function (req,res) {
                 // console.log(req.session);
             }else {
                 alert(JSON.stringify(err));
-                console.log("登录失败");
-                res.send("<script >alert('登录失败！');")
+                // console.log("登录失败");
+                res.send("<script >alert('登录失败！'); location.href = '/admin/login'</script>")
             }
         });
 });
