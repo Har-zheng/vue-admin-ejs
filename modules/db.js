@@ -12,7 +12,7 @@ function __connectDb(callback) {
             console.log('数据库连接失败')
             return;
         }
-        // console.log(client);
+        console.log(client);
         // 增加 修改 删除
         callback(client);
 
