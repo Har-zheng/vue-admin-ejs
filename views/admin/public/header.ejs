@@ -1,7 +1,15 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卡佑天行</title>
+</head>
+<body>
 <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="/css/administration.css">
-
+<link rel="stylesheet" href="/css/table.css">
 <!-- 导航部分  -->
 <nav>
     <div class="public">
@@ -19,9 +27,9 @@
                             <li> <a href="/admin/customer_list">企业客户</a> </li>
                             <li> <a href="/admin/recruitment">招聘信息</a> </li>
                             <li> <a href="/admin/management">管理账户</a> </li>
-                            <li> <a href="/admin/settlement">结算</a> </li>
-                            <!-- <li> <a to="/entrustment">信用评估</a> </li>   //归为功能                            -->
+                            <li> <a href="/admin/settlement">结算</a> </li>                    
                             <li><a href="/admin/loginOut">退出登录</a></li>
+                            <li> <a href="/admin/product">测试列表页</a> </li>   <!--归为功能 -->
                         </ul>
                     </div>
                 </div>
@@ -29,8 +37,6 @@
         </div>
     </div>
 </nav>
-
-
 <!--<nav class="navbar navbar-inverse" role="navigation">-->
     <!--<div class="container-fluid">-->
         <!--<div class="navbar-header">-->
@@ -82,5 +88,4 @@
         $(".ul_list li a").removeClass('xian_i');
         $(".ul_list li a").eq(4).addClass('xian_i');
     }
-
 </script>

@@ -1,0 +1,4 @@
+.table-striped  tbody tr td {
+    padding: 0;
+    vertical-align: baseline;
+}

@@ -1,6 +1,5 @@
 
 <%- include ../public/header.ejs %>
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-2">
@@ -42,15 +41,14 @@
                         <th>姓名</th>
                         <th>价格</th>
                         <th>驾照</th>
-
                         <th class="text-center">操作</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <%for(var i=0; i<list.length; i++){ %>
+                    <%for(var i = 0; i < list.length; i++){ %>
                     <tr>
-                        <td><%=i+1%></td>
-                        <td><img width="300px" src="/<%=list[i].pic%>"></td>
+                        <td style="padding-left: 8px;"><%=i+1%></td>
+                        <td><img width="40px" src="/<%=list[i].pic%>"></td>
                         <td><%=list[i].title%></td>
                         <td><%=list[i].price%></td>
                         <td><%=list[i].fee%></td>
